@@ -1,18 +1,15 @@
+-- Create the burgers_db database --
 CREATE DATABASE burgers_db;
 
 USE burgers_db;
 
+-- Create a burgers table w/ the required fields
 CREATE TABLE burgers(
     id INT AUTO_INCREMENT NOT NULL,
     burger_name VARCHAR(50) NOT NULL,
-    devoured BOOLEAN NOT NULL DEFAULT 0,
-    date TIMESTAMP NOT NULL,
+    devoured BOOLEAN DEFAULT false,
+    ts TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    dt DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     PRIMARY KEY(id)
 );
 
-CREATE TABLE menu(
-    id INT AUTO_INCREMENT NOT NULL,
-    item VARCHAR(50) NOT NULL,
-    entree BOOLEAN NOT NULL DEFAULT 1,
-    PRIMARY KEY(id)
-);
