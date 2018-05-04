@@ -6,7 +6,7 @@ Created during Week 14 of the UCSD Coding Bootcamp. The goal was to create a Bur
 
 Getting Started
 - Heroku Link
-https://git.heroku.com/pure-river-93980.git
+https://pure-river-93980.herokuapp.com/
 
 Technologies Used
 - Node.js
